@@ -10,17 +10,6 @@ export function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-gray-900/50 to-gray-900" />
       <div className="container mx-auto px-4 relative">
         <div className="max-w-6xl mx-auto">
-          {/* Logo Section */}
-          <div className="flex justify-center mb-12">
-            <div className="bg-white/90 rounded-2xl p-3 backdrop-blur-sm">
-              <img 
-                src="https://www.passionproductaccelerator.com/wp-content/uploads/2023/05/passion-product-accelerator-1-copy-1024x570.png"
-                alt="Passion Product Accelerator"
-                className="h-8 object-contain"
-              />
-            </div>
-          </div>
-
           {/* Program Introduction */}
           <div className="text-center mb-12">
             <div className="inline-flex items-center px-6 py-3 bg-blue-500/10 rounded-full text-blue-300 mb-4">

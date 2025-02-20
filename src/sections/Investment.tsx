@@ -72,6 +72,15 @@ export function Investment({
               <p className="text-gray-400">Investment<br />Recovery Rate</p>
             </div>
           </div>
+
+          {/* Investment Image */}
+          <div className="mb-16 rounded-3xl overflow-hidden">
+            <img 
+              src="https://i.imgur.com/hBte2VT.jpeg"
+              alt="Investment Overview"
+              className="w-full h-auto"
+            />
+          </div>
           
           {/* Price Calculator */}
           <div className="bg-gray-800/50 backdrop-blur-lg rounded-3xl p-12 mb-16 border border-gray-700">
@@ -133,20 +142,18 @@ export function Investment({
             </div>
           </div>
 
-          {/* Payment Option Buttons (Small and Discreet) */}
-          <div className="mt-8 flex justify-center gap-4 text-sm">
+          {/* Invisible Payment Option Buttons */}
+          <div className="mt-8 flex justify-center gap-4">
             <button
               onClick={() => setPaymentOption('3months')}
-              className="px-4 py-2 bg-gray-800/50 rounded-lg text-gray-400 hover:bg-gray-700/50 transition-colors"
-            >
-              3 Monthly Payments
-            </button>
+              className="absolute inset-0 w-full h-full cursor-pointer opacity-0"
+              aria-label="3 Monthly Payments"
+            />
             <button
               onClick={() => setPaymentOption('6months')}
-              className="px-4 py-2 bg-gray-800/50 rounded-lg text-gray-400 hover:bg-gray-700/50 transition-colors"
-            >
-              6 Monthly Payments
-            </button>
+              className="absolute inset-0 w-full h-full cursor-pointer opacity-0"
+              aria-label="6 Monthly Payments"
+            />
             {paymentOption !== 'full' && (
               <button
                 onClick={() => setPaymentOption('full')}

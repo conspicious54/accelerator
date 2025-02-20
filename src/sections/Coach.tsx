@@ -9,22 +9,29 @@ export function Coach() {
           <div className="md:w-1/2 relative">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl transform rotate-6" />
             <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl transform -rotate-3 opacity-50" />
-            <img 
-              src="https://pbs.twimg.com/profile_images/1539874657674747905/wOoxDOsz_400x400.jpg"
-              alt="Nichole Alden"
-              className="relative rounded-2xl shadow-2xl transform -rotate-3 transition-transform hover:rotate-0 duration-300 border-4 border-gray-800"
-            />
+            <div className="relative flex gap-4">
+              <img 
+                src="https://pbs.twimg.com/profile_images/1539874657674747905/wOoxDOsz_400x400.jpg"
+                alt="Nichole Alden"
+                className="relative rounded-2xl shadow-2xl transform -rotate-3 transition-transform hover:rotate-0 duration-300 border-4 border-gray-800 w-1/2"
+              />
+              <img 
+                src="https://cdn.boldjourney.com/wp-content/uploads/2023/09/c-TravisMarziani__8_1694708666679.jpg"
+                alt="Travis Marziani"
+                className="relative rounded-2xl shadow-2xl transform rotate-3 transition-transform hover:rotate-0 duration-300 border-4 border-gray-800 w-1/2"
+              />
+            </div>
           </div>
           <div className="md:w-1/2">
             <div className="space-y-8">
               <div className="inline-flex items-center px-6 py-3 bg-blue-500/10 rounded-full text-blue-300 mb-4 border border-blue-500/20">
                 <Award className="w-5 h-5 mr-2" />
-                <span className="text-sm font-medium">Your Expert Coach</span>
+                <span className="text-sm font-medium">Your Expert Coaches</span>
               </div>
               <h2 className="text-5xl font-bold mb-8">
                 Meet{' '}
                 <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-                  Nichole
+                  Nichole & Travis
                 </span>
               </h2>
               <div className="space-y-8 text-gray-300">
